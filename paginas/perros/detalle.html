@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Perritos - Adopciones</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="../.././css/style.css" rel="stylesheet" />
+    <!-- New -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script> -->
+    
+    <!-- CSRF Token -->
+    
+    <!-- CSS -->
+    <!-- <link href="/css/estilos.css" rel="stylesheet"/> -->
+
+    <!-- Alertas -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+      <a href="/index.html" class="logo"><img src="/imagenes/Orange Simple Petshop Logo (500 x 250 px).png" alt="" /> </a>
+      <a href="/index.html" class="logo2"></a>
+      <div class="menu" id="show-menu">
+        <nav>
+          <ul>
+            <li><a href="../.././contenido/albergue.html">ALBERGUE</a></li>
+            <li><a href="../.././paginas/trabajo/actividad.html">ACTIVIDADES</a></li>
+            <li><a href="../.././contenido/blog.html">BLOG</a></li>
+            <li><a href="../.././contenido/contacto.html">CONTACTO</a></li>
+            <li><a href="../.././contenido/blog.html">AYÚDANOS A AYUDAR</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="icon-menu">
+        <img class="fas fa-bars" src="../.././icon/bars-solid.png" alt="" />
+      </div>
+    </header>
+    <main>
+        <!-- Contenido - Inicio -->
+        <section>
+            <div class="content-page-back">
+                <h1 class="mt-4">Perritos en Adopción
+                    <div style="float: right;">
+                        <button class="btn btn-primary" onclick="window.location.href='../../index.html';">
+                            <i class="bi bi-arrow-left"></i>
+                            Regresar
+                        </button>
+                    </div>
+                </h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active">Perritos en Adopción</li>
+                </ol>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Perros
+                    </div>
+                    <div id="cardPerro" class="card-body">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content-help-self">
+                <h2>Ayúdanos a segior ayudando uniéndote a</h2>
+                <a href="">LA MANADA DE VOZ ANIMAL</a>
+            </div>
+        </section>
+        <section>
+            <div class="content-slider">
+                <div class="card-slider">
+                    <div class="slide">
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    <img src="../.././img/animals.png" alt="" />
+                    <img src="../.././img/bolsa-de-comida.png" alt="" />
+                    <img src="../.././img/pedigree.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space"></section>
+        <!-- Contenido - Final -->
+    </main>
+    
+    <footer>
+        <div class="content-footer">
+            <div class="block-ft">
+            <h2>info@vozanimalperu.com</h2>
+            <h3>BY NEMESISSSTUDIO.COM</h3>
+            </div>
+            <div class="block-ft-2">
+            <a href=""><img src="../.././icon/FB_icon-icons.com_65484.png" alt="" /></a>
+            <a href=""><img src="../.././icon/instagram_icon_125245.png" alt="" /></a>
+            <a href=""
+                ><img src="../.././icon/YOUTUBE_icon-icons.com_65487.png" alt=""
+            /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../.././js/nav.js"></script>
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/data.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let id=localStorage.getItem("id_adopcion");
+            let p=perros.find(elem=>elem.id==id);
+            console.log("Perro: ", p);
+            
+            enviar(p);
+	    });
+        
+        function enviar(perro){
+            let html='';
+            html+=
+                '<div class="row">'+
+                    '<div class="col-md-12 order-md-1">'+
+                        '<h4 class="mb-3">Perro: <i>"'+perro.nombre+'"</i></h4>'+
+                        '<div class="mb-3">'+
+                            '<aside class="col-md-12 blog-sidebar">'+
+                                '<div class="p-3 mb-3 bg-light rounded">'+
+                                    '<h4 class="font-bold text-muted"><em>Mi Descripción</em></h4>'+
+                                    '<p class="mb-0">'+perro.descripcion+'</p>'+
+                                '</div>'+
+                            '</aside>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>'+
+                
+                '<hr class="mb-4">'+
+                
+                '<div class="row">'+
+                    '<div class="col-md-4 order-md-2 mb-4">'+
+                        '<h4 class="d-flex justify-content-between align-items-center mb-3">'+
+                            '<span class="text-muted">Detalle</span>'+
+                            '<span class="text-muted badge badge-secondary badge-pill">'+
+                                'Código: '+perro.id+''+
+                            '</span>'+
+                        '</h4>'+
+                        '<ul class="list-group mb-3">'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Nombre</h6>'+
+                                    '<small class="text-muted">'+perro.nombre+'</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Raza</h6>'+
+                                    '<small class="text-muted">'+perro.raza+'</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Estado de Salud</h6>'+
+                                    '<small class="text-muted">';
+                                        switch(perro.estado){
+                                            case 0: html+='Insano'; break;
+                                            case 1: html+='Sano'; break;
+                                            case 2: html+='Bueno'; break;
+                                            case 3: html+='Excelente'; break;
+                                            default: html+='Desconocido'; break;
+                                        }
+                                        html+=' de salud</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Vacunación</h6>'+
+                                    '<small class="text-muted">';
+                                        if(perro.vacunado==0){
+                                            html+='No';
+                                        }else{
+                                            html+='Sí';
+                                        }
+                                        html+=' fue vacunado</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Castración</h6>'+
+                                    '<small class="text-muted">';
+                                        if(perro.castrado==0){
+                                            html+='No';
+                                        }else{
+                                            html+='Sí';
+                                        }
+                                        html+=' fue castrado</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item d-flex justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Género</h6>'+
+                                    '<small class="text-muted">'+
+                                        ((perro.genero=="F")?'Hembra':'Macho')+
+                                    '</small>'+
+                                '</div>'+
+                            '</li>'+
+                            '<li class="list-group-item justify-content-between lh-condensed">'+
+                                '<div>'+
+                                    '<h6 class="my-0">Foto</h6>'+
+                                    '<div class="text-center">'+
+                                        '<a href="'+perro.foto+'">'+
+                                            '<img alt="Foto del libro" class="img-fluid rounded" height="auto" src="'+perro.foto+'" style="max-width: 20%;" title="'+perro.nombre+'">'+
+                                        '</a>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</li>'+
+                        '</ul>'+
+                    '</div>'+
+                    
+                    '<div class="col-md-8 order-md-1">'+
+                        '<div class="mb-3">'+
+                            '<div class="card flex-md-row mb-4 box-shadow h-md-250">'+
+                                '<div class="card-body d-flex flex-column align-items-start">'+
+                                    '<strong class="d-inline-block mb-2 text-success">Mi Historia</strong>'+
+                                    '<h3 class="mb-0">'+
+                                        '<a class="text-dark" href="'+perro.foto+'">'+perro.nombre+' - '+perro.raza+'</a>'+
+                                    '</h3>'+
+                                    '<div class="mb-1 text-muted">Abr 15</div>'+
+                                    '<p class="card-text mb-auto">'+perro.historia+'</p>'+
+                                    '<a href="#">Continuar leyendo</a>'+
+                                '</div>'+
+                                '<img alt="Card image cap" class="card-img-right flex-auto d-none d-md-block img-fluid mt-5" height="auto" src="'+perro.foto+'" style="max-width: 20%; height: fit-content;">'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>';
+            $('#cardPerro').html(html);
+        }
+    </script>
+</body>
+
+</html>
